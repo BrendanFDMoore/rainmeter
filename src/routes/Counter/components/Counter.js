@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Text, View } from 'react-native'
+import * as Animatable from 'react-native-animatable'
 
 export const Counter = ({ counter, increment, doubleAsync }) => (
   <div style={{ margin: '0 auto' }} >
@@ -14,6 +15,7 @@ export const Counter = ({ counter, increment, doubleAsync }) => (
     </button>
     <View>
       <Text>Testing RNWeb?</Text>
+      <Animatable.Text animation='zoomInUp'>Zoom me up, Scotty</Animatable.Text>
     </View>
   </div>
 )

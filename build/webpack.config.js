@@ -56,7 +56,8 @@ const config = {
 // ------------------------------------
 config.module.rules.push({
   test: /\.(js|jsx)$/,
-  exclude: /node_modules/,
+  // exclude: /node_modules/,
+  exclude: /node_modules\/(?!(react-native-animatable|ANOTHER-ONE)\/).*/,
   use: [{
     loader: 'babel-loader',
     query: {
