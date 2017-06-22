@@ -5,7 +5,10 @@ import './styles/main.scss'
 
 // Store Initialization
 // ------------------------------------
-const store = createStore(window.__INITIAL_STATE__)
+const store = createStore(
+  window.__INITIAL_STATE__,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 // Render Setup
 // ------------------------------------
