@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { StyleSheet, Dimensions } from 'react-native'
 import * as Animatable from 'react-native-animatable'
 
-const MONEY_DIMENSIONS = { width: 50, height: 22 }
+const MONEY_DIMENSIONS = { width: 100, height: 44 }
 const SCREEN_DIMENSIONS = Dimensions.get('window')
 // const SCREEN_DIMENSIONS = { width: 1900, height: 1200 }
 console.log('SCREEN_DIMENSIONS')
@@ -111,8 +111,8 @@ const MakeItRain = ({ count = 10, duration = 2000 }) => (
         }}
       >
         <Swinging amplitude={MONEY_DIMENSIONS.width / 5} delay={randomize(duration)}>
-          <FlippingImage source={require('fiver-front.png')} delay={flipDelay} />
-          <FlippingImage source={require('fiver-back.png')} delay={flipDelay} back />
+          <FlippingImage source={require('fiver-front-sm.png')} delay={flipDelay} />
+          <FlippingImage source={require('fiver-back-sm.png')} delay={flipDelay} back />
         </Swinging>
       </Falling>
     ))}
